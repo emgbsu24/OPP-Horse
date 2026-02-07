@@ -13,3 +13,4 @@ public:
 	Race();
 	void start();
 };
+#endif 

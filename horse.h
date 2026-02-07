@@ -14,3 +14,4 @@ public:
 	void printLane() const;
 	bool isWinner() const;
 };
+#endif
