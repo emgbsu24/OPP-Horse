@@ -1,24 +1,24 @@
 # OPP-Horse
 Race UML
 
+```mermaid
 classDiagram
-
-Class Race {
-   - int TRACK
-   - int HorseNum
-   - Horse horses[NUMHORSES]
-   + Race()
-   + Void start()
+class Race {
+    - int NUM_HORSES
+    - int TRACK
+    - Horse horses[NUM_HORSES]
+    + Race 
+    + void start 
+}
+class Horse {
+    - int position
+    + Horse
+    + void move 
+    + bool win : int TRACK
+    + void print
 }
 
-
-Class Horse {
-   - int position 
-   + Horse()
-   + void move()
-   + bool win(int TRACK)
-   + void print()
-}
- 
+Race --> Horse
+```
 
 
